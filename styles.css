@@ -1,0 +1,257 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.hero-text {
+    text-align: center;
+    margin: 50px 0; /* Adjust the margin to place it correctly */
+}
+
+.hero-text h1 {
+    font-size: 48px; /* Larger text for the main heading */
+    font-weight: bold;
+    color: #333; /* Darker color for better visibility */
+}
+
+.hero-text p {
+    font-size: 24px; /* Smaller text for the subheading */
+    color: #666; /* Lighter color for the subheading */
+    margin-top: 10px; /* Small margin to separate it from the main heading */
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Hero section */
+.hero {
+    background: url('https://content3.jdmagicbox.com/comp/thrissur/q3/9999px487.x487.220924013704.w9q3/catalogue/lora-pets-thrissur-7l19x4fv5m.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #e63900;
+}
+
+/* Offerings section */
+.offerings {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.offering-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    flex-basis: 45%; /* Adjusted to ensure each item takes up roughly half the screen */
+}
+
+.offering-item:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.offering-item img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 15px;
+}
+
+.offering-item h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.offering-item p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #888;
+}
+
+.offering-item a {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.offering-item a:hover {
+    text-decoration: underline;
+}
+
+/* Join Us section */
+.join-us {
+    text-align: center;
+    padding: 100px 50px;
+    background-color: #fff;
+}
+
+.join-us h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.join-btn {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.join-btn:hover {
+    background-color: #e63900;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .offerings {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offering-item {
+        margin-bottom: 30px;
+    }
+}
+
+/* Details section styling */
+.details {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.detail-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.detail-item h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.detail-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    background-color: #ff4500;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #e63900;
+}
+
+.accordion-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.accordion-content p {
+    margin: 5px 0;
+}
+
+.accordion-button.active + .accordion-content {
+    display: block;
+    max-height: 300px; /* Adjust as necessary */
+}
